@@ -32,29 +32,73 @@
                 <p>This is also placeholder text, but I plan to make this a JS insert instead.</p>
             </div>
         </section>
-        <div>Imagine a river here, i cant put an empty img tag</div>
+        <section class="grid-con center-grid-con" id="slideshow">
+            <div class="col-span-full" id="river">
+                <p>Imagine a river here, i cant put an empty img tag</p>
+            </div>
+        </section>
         <section class="grid-con center-grid-con" id="gallery">
-            <div class="infobox">
+            <div class="infobox col-span-full">
                 <h2>This is one of my projects</h2>
             </div>
-            <div class="infobox">
+            <div class="infobox col-span-full">
                 <h2>This is one of my projects</h2>
             </div>
-            <div class="infobox">
+            <div class="infobox col-span-full">
                 <h2>This is one of my projects</h2>
             </div>
         </section>
-        <footer>
-            <h2>Contact information</h2><ul>
-                <li><a href="#">Introduction</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Social Media</a></li>
-                <li><a href="#">Social Media</a></li>
-                <li><a href="#">Social Media</a></li>
-                <li><a href="#">Social Media</a></li>
-            </ul>
+        <div class="grid-con" id="video-container">
+        <section id="player-container" class="col-span-full">
+            <video controls preload="metadata" poster="images/thumbnail.heic">
+                <source src="video/Comp 1.mp4" type="video/mp4">
+                <p>Your browser does not support this video tag. Please upgrade your browser to the latest version.</p>
+            </video>
+            <div class="video-controls" id="video-controls">
+                <button id="playbutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="playericon play">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+                    </svg>
+                </button>
+                <button id="pausebutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="playericon pause">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9v6m-4.5 0V9M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+                <button id="stopbutton">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="playericon stop">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 0 1 9 14.437V9.564Z" />
+                    </svg>
+                </button>
+                <!--Icon for volume-->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="playericon volume">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z" />
+                    </svg>
+                <input type="range" id="changevolume" step=".05" min="0" max="1" value="1">
+                <button id="fullscreen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="playericon full">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </div>
+        <footer id="main-footer">
+            <nav class="col-span-full" id="footer-nav">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li><a href="#">Social Media Link</a></li>
+                    <li><a href="#">Social Media Link</a></li>
+                    <li><a href="#">Social Media Link</a></li>
+                    <li><a href="#">Social Media Link</a></li>
+                    <li><a href="#">Social Media Link</a></li>
+                </ul>
+        </nav>
         </footer>
 
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
