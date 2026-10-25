@@ -4,22 +4,23 @@
     margin-bottom: 20px;
 
     #main-nav {
-        margin-top: 10px;
         background-color: abstracts.$primary-color;
-        border-radius: 15px;
+        display: flex;
+    }
+    #nav-logo {
+        height: 50px;
     }
 
     #main-nav ul {
         display: flex;
         list-style-type: none;
-        justify-content: center;
         padding: 0;
-        margin: 20px 0 20px 0;
+        margin-left: auto;
+        padding-right: 20px;
     }
 
     #main-nav ul li {
         margin: 0 20px 0 20px;
-
     }
 
     #main-nav a {
