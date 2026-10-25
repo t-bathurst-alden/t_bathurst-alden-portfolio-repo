@@ -1,9 +1,10 @@
+
+
 #player-container {
     position: relative;
     /*allows the player to expand to fullscreen*/
     display: flex;
     flex-direction: column;
-    max-height: 1000px;
 }
 
 .video-controls {
